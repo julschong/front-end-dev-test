@@ -6,6 +6,7 @@ import BannerCTA from './components/BannerCTA';
 
 import bannerImage1 from './assets/banner-1.jpg';
 import bannerImage2 from './assets/banner-2.jpg';
+import Footer from './components/Footer';
 
 const App = () => {
     return (
@@ -63,13 +64,7 @@ const App = () => {
                     </p>
                 </div>
             </section>
-            <footer>
-                <p>Follow Us:</p>
-                <div>
-                    <p>Instagram</p>
-                    <p>facebook</p>
-                </div>
-            </footer>
+            <Footer />
         </>
     );
 };

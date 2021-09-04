@@ -3,8 +3,8 @@ import './BannerCTA.scss';
 const BannerCTA = ({ bannerURL, gridStart, gridEnd }) => {
     return (
         <section
-            className="banner grid"
-            style={{ background: `url(${bannerURL})` }}
+            className="banner grid span-all-grid"
+            style={{ backgroundImage: `url(${bannerURL})` }}
         >
             <div
                 className="flex-column cta-container"

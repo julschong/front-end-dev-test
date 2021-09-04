@@ -1,6 +1,7 @@
 .banner {
-    background-image: url('/assets/banner-1.jpg');
     height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .cta-container {
         justify-content: center;
