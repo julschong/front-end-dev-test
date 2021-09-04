@@ -19,6 +19,7 @@ const Content = () => {
             <img
                 src={ContentImage}
                 alt="silhouette of a friend helping another mountain climbing"
+                loading="lazy"
             />
         </section>
     );
