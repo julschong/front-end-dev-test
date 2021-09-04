@@ -1,0 +1,15 @@
+.banner {
+    background-image: url('/assets/banner-1.jpg');
+    height: 600px;
+
+    .cta-container {
+        justify-content: center;
+        gap: 20px;
+        h2 {
+            color: var(--color-font-purple);
+        }
+        button {
+            background-color: var(--color-button-orange);
+        }
+    }
+}

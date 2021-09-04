@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+:root {
+    --color-button-purple: #ac5fd0;
+    --color-button-orange: #ff7218;
+    --color-font-purple: #613476;
+    --color-font-dark: #161616;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+// Shared classes
+
+.btn {
+    color: white;
+    width: 172px;
+    height: 55px;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.2ch;
+}
+
+.content-detail-link {
+    color: var(--color-font-purple);
+}
+
+.h2-font {
+    font-weight: 700;
+    font-size: 40px;
+    white-space: nowrap;
+}
+
+.detail-font {
+    color: var(--color-font-dark);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.detail-link {
+    color: var(--color-font-purple);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.1ch;
+}
+
+// Utility classes
+.grid {
+    display: grid;
+    grid-template-columns: 173px 77px calc(50% - 250px) 125px 1fr 100px;
+}
+
+.split {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.span-all-grid {
+    grid-column: 1/-1;
+}

@@ -1,0 +1,20 @@
+.content-container {
+    .content-left {
+        grid-column: 3/4;
+        margin: auto;
+        h2 {
+            color: var(--color-font-purple);
+        }
+        p {
+            padding-top: 21px;
+            padding-right: 76px;
+        }
+        a {
+            margin-top: 12px;
+        }
+    }
+    img {
+        grid-column: 4/-1;
+        width: 100%;
+    }
+}

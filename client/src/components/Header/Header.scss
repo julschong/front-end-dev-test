@@ -1,0 +1,37 @@
+header {
+    background-image: url('/assets/hero.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h1 {
+        font-size: 72px;
+        line-height: 72px;
+        font-weight: 800;
+        -webkit-text-stroke: 1px white;
+        -webkit-text-fill-color: transparent;
+        white-space: nowrap;
+    }
+
+    p {
+        font-size: 64px;
+        margin-top: 10px;
+        line-height: 64px;
+        letter-spacing: 0.15ch;
+        font-weight: 700;
+        white-space: nowrap;
+        color: white;
+    }
+
+    .logo {
+        margin-top: 33px;
+        grid-column: 2/-1;
+        width: 249px;
+        height: 45px;
+    }
+
+    button {
+        margin-top: 24px;
+        background-color: var(--color-button-purple);
+    }
+}
