@@ -1,0 +1,33 @@
+.feature-container {
+    height: 600px;
+    .content-left {
+        grid-column: 3/4;
+        margin: auto;
+        h2 {
+            color: var(--color-font-purple);
+        }
+        p {
+            padding-top: 21px;
+            padding-right: 76px;
+        }
+        a {
+            margin-top: 12px;
+        }
+    }
+    .feature-icons-container {
+        display: flex;
+        grid-column: 4/-1;
+        background-color: var(--color-background-light-grey);
+        width: 100%;
+        align-items: center;
+        padding-left: 123px;
+
+        .feature-icons-group {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-content: center;
+            justify-content: center;
+            gap: 150px;
+        }
+    }
+}

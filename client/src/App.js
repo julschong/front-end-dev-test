@@ -6,6 +6,7 @@ import BannerCTA from './components/BannerCTA';
 import bannerImage1 from './assets/banner-1.jpg';
 import bannerImage2 from './assets/banner-2.jpg';
 import Footer from './components/Footer';
+import Features from './components/Features/index';
 
 const App = () => {
     return (
@@ -13,36 +14,7 @@ const App = () => {
             <Header />
             <Content />
             <BannerCTA bannerURL={bannerImage1} gridStart={3} gridEnd={4} />
-            <section className="split">
-                <div>
-                    <h3>LOREM IPSUM DOLOR SIT AMET</h3>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Modi, nam, vero quas commodi nemo corporis
-                        laboriosam culpa eligendi, non ipsam ut. Voluptatibus
-                        vel aliquam nam.
-                    </p>
-                    <a>{'>'} Lorem Ipsum</a>
-                </div>
-                <div>
-                    <div>
-                        <p>icon1</p>
-                        <p>icon1</p>
-                    </div>
-                    <div>
-                        <p>icon2</p>
-                        <p>icon2</p>
-                    </div>
-                    <div>
-                        <p>icon3</p>
-                        <p>icon3</p>
-                    </div>
-                    <div>
-                        <p>icon4</p>
-                        <p>icon4</p>
-                    </div>
-                </div>
-            </section>
+            <Features />
             <BannerCTA bannerURL={bannerImage2} gridStart={5} gridEnd={6} />
             <section className="split">
                 <div>
