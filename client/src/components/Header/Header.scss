@@ -15,36 +15,41 @@ header {
         }
     }
 
-    h1 {
-        font-size: 72px;
-        line-height: 72px;
-        font-weight: 800;
-        -webkit-text-stroke: 1px white;
-        -webkit-text-fill-color: transparent;
-        white-space: nowrap;
-    }
+    .hero-title-container {
+        justify-content: center;
+        height: calc(100% - 100px);
 
-    p {
-        font-size: 64px;
-        margin-top: 10px;
-        line-height: 64px;
-        letter-spacing: 0.15ch;
-        font-weight: 700;
-        white-space: nowrap;
-        color: white;
+        h1 {
+            font-size: 5rem;
+            line-height: 5rem;
+            font-weight: 800;
+            -webkit-text-stroke: 1px white;
+            -webkit-text-fill-color: transparent;
+            white-space: nowrap;
+        }
+        p {
+            font-size: 4rem;
+            margin-top: 0.6rem;
+            line-height: 4rem;
+            letter-spacing: 0.35rem;
+            font-weight: 700;
+            white-space: nowrap;
+            color: white;
+        }
+        .custom-btn {
+            margin-top: 1.5rem;
+            background-color: var(--color-button-purple);
+        }
     }
 
     .logo {
+        margin-left: 70px;
         margin-top: 33px;
         grid-column: 2/-1;
         width: 249px;
         height: 45px;
     }
 
-    .custom-btn {
-        margin-top: 24px;
-        background-color: var(--color-button-purple);
-    }
     .more-arrow {
         position: absolute;
         left: calc(50% - 20px);

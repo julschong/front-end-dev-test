@@ -1,6 +1,13 @@
 import './BannerCTA.scss';
 
-const BannerCTA = ({ bannerURL, bannerId, gridStart, gridEnd }) => {
+const BannerCTA = ({
+    bannerURL,
+    bannerId,
+    gridStart,
+    gridEnd,
+    shiftX,
+    detail
+}) => {
     return (
         <section
             id={bannerId}
@@ -9,9 +16,18 @@ const BannerCTA = ({ bannerURL, bannerId, gridStart, gridEnd }) => {
         >
             <div
                 className="flex-column cta-container"
-                style={{ gridColumn: `${gridStart}/${gridEnd}` }}
+                style={{
+                    gridColumn: `${gridStart}/${gridEnd}`,
+                    transform: `translateX(${shiftX})`
+                }}
             >
                 <h2 className="h2-font">LOREM IPSUM</h2>
+                <p
+                    className="detail-font"
+                    style={{ display: detail ? 'auto' : 'none' }}
+                >
+                    {detail}
+                </p>
                 <button className="custom-btn">BUTTON BUTTON</button>
             </div>
         </section>

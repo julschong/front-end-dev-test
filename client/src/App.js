@@ -17,15 +17,20 @@ const App = () => {
             <BannerCTA
                 bannerURL={bannerImage1}
                 bannerId="banner1"
-                gridStart={3}
-                gridEnd={4}
+                gridStart={1}
+                gridEnd={2}
             />
             <Features />
             <BannerCTA
                 bannerURL={bannerImage2}
                 bannerId="banner2"
-                gridStart={5}
-                gridEnd={6}
+                gridStart={2}
+                gridEnd={3}
+                detail="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur, et iusto? Minus, accusantium qui saepe assumenda
+                    sequi, quam id expedita, vel voluptatem dignissimos labore
+                    quidem."
+                shiftX="150px"
             />
             <Testimonial />
             <Footer />

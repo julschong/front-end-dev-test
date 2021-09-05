@@ -1,18 +1,14 @@
 .carousel {
-    grid-column: 5/6;
     justify-content: center;
     h4 {
         color: var(--color-font-purple);
         font-weight: 700;
         font-size: 18px;
     }
-    .carousel-control-prev {
-        left: -13%;
+    .carousel-inner {
+        width: 70%;
     }
 
-    .carousel-control-next {
-        right: -10%;
-    }
     .carousel-indicators > button {
         width: 8px;
         height: 8px;
