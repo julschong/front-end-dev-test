@@ -1,8 +1,19 @@
 header {
     background-image: url('/assets/hero.jpg');
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    animation: fadeIn 1s;
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 
     h1 {
         font-size: 72px;
@@ -33,5 +44,11 @@ header {
     .custom-btn {
         margin-top: 24px;
         background-color: var(--color-button-purple);
+    }
+    .more-arrow {
+        position: absolute;
+        left: calc(50% - 20px);
+        bottom: 5px;
+        fill: rgba(255, 255, 255, 0.5);
     }
 }

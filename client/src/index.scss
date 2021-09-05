@@ -21,6 +21,7 @@
 html {
     overflow-x: hidden;
     overflow-y: overlay;
+    min-width: 1100px;
 }
 *::-webkit-scrollbar {
     width: 24px;
@@ -113,4 +114,31 @@ html {
 
 .span-all-grid {
     grid-column: 1/-1;
+}
+
+// responsive
+
+@media (max-width: 1240px) {
+    .grid {
+        grid-template-columns: 120px 50px calc(50% - 170px) 125px 1fr 66px;
+    }
+
+    .h2-font {
+        font-size: 32px;
+    }
+
+    .detail-font {
+        font-size: 14px;
+    }
+}
+
+// mobile
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: minmax(1fr, 1fr);
+    }
+
+    .html {
+        min-width: 100vw;
+    }
 }

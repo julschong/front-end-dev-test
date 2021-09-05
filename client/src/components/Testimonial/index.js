@@ -4,7 +4,7 @@ import ReviewCarousel from './../ReviewCarousel/index';
 
 const Testimonial = () => {
     return (
-        <section className="testimonial-container grid">
+        <section id="testimonial" className="testimonial-container grid">
             <div className="test-left flex-column">
                 <h2 className="h2-font">LOREM IPSUM DOLOR SIT AMET</h2>
                 <div className="star-group">

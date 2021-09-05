@@ -3,7 +3,7 @@ import ContentImage from '../../assets/img-1.jpg';
 
 const Content = () => {
     return (
-        <section className="content-container grid">
+        <section id="content" className="content-container grid">
             <div className="flex-column content-left">
                 <h2 className="h2-font">LOREM IPSUM</h2>
                 <p className="detail-font">
@@ -14,7 +14,9 @@ const Content = () => {
                     odit dolorum aliquam nulla praesentium omnis adipisci natus
                     a magnam velit.
                 </p>
-                <a className="detail-link">{'>'} Lorem Ipsum</a>
+                <a className="detail-link" href="#banner1">
+                    {'>'} Lorem Ipsum
+                </a>
             </div>
             <img
                 src={ContentImage}

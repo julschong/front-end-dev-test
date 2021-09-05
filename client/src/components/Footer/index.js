@@ -9,7 +9,18 @@ const Footer = () => {
             <p>Follow Us:</p>
             <div className="follow-us-icon-group">
                 <InstagramIcon height={43} />
-                <FacebookIcon height={43} />
+                <a
+                    href="https://www.facebook.com/RoosterGrin/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <FacebookIcon
+                        height={43}
+                        href="https://www.roostergrin.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                    />
+                </a>
             </div>
         </footer>
     );

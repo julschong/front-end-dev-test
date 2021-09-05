@@ -8,7 +8,7 @@ import { ReactComponent as HomeRetention } from '../../assets/home-retention.svg
 
 const Features = () => {
     return (
-        <section className="grid feature-container">
+        <section id="features" className="grid feature-container">
             <div className="flex-column content-left">
                 <h2 className="h2-font">LOREM IPSUM DOLOR SIT AMET</h2>
                 <p className="detail-font">
@@ -16,7 +16,9 @@ const Features = () => {
                     Modi, nam, vero quas commodi nemo corporis laboriosam culpa
                     eligendi, non ipsam ut. Voluptatibus vel aliquam nam.
                 </p>
-                <a className="detail-link">{'>'} Lorem Ipsum</a>
+                <a className="detail-link" href="#banner2">
+                    {'>'} Lorem Ipsum
+                </a>
             </div>
             <div className="feature-icons-container">
                 <div className="feature-icons-group">

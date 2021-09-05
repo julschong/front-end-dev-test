@@ -14,9 +14,19 @@ const App = () => {
         <>
             <Header />
             <Content />
-            <BannerCTA bannerURL={bannerImage1} gridStart={3} gridEnd={4} />
+            <BannerCTA
+                bannerURL={bannerImage1}
+                bannerId="banner1"
+                gridStart={3}
+                gridEnd={4}
+            />
             <Features />
-            <BannerCTA bannerURL={bannerImage2} gridStart={5} gridEnd={6} />
+            <BannerCTA
+                bannerURL={bannerImage2}
+                bannerId="banner2"
+                gridStart={5}
+                gridEnd={6}
+            />
             <Testimonial />
             <Footer />
         </>

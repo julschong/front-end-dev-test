@@ -1,8 +1,9 @@
 import './BannerCTA.scss';
 
-const BannerCTA = ({ bannerURL, gridStart, gridEnd }) => {
+const BannerCTA = ({ bannerURL, bannerId, gridStart, gridEnd }) => {
     return (
         <section
+            id={bannerId}
             className="banner grid span-all-grid"
             style={{ backgroundImage: `url(${bannerURL})` }}
         >
