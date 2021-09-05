@@ -4,7 +4,9 @@
     --color-button-purple: #ac5fd0;
     --color-button-orange: #ff7218;
     --color-font-purple: #613476;
+    --color-font-h2-dark: #3e3e3e;
     --color-font-dark: #161616;
+
     --color-background-light-grey: #fafafa;
 }
 
@@ -76,6 +78,14 @@ html {
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 0.1ch;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: #ffe465;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 // Utility classes

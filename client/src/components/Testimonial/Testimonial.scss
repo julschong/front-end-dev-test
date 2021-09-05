@@ -1,0 +1,19 @@
+.testimonial-container {
+    .test-left {
+        grid-column: 3/4;
+        justify-content: center;
+        min-height: 400px;
+
+        h2 {
+            color: var(--color-font-h2-dark);
+            white-space: normal;
+            line-height: 48px;
+            margin-bottom: 10px;
+        }
+
+        .star-group {
+            display: flex;
+            gap: 10px;
+        }
+    }
+}

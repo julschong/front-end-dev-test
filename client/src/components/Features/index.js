@@ -10,7 +10,7 @@ const Features = () => {
     return (
         <section className="grid feature-container">
             <div className="flex-column content-left">
-                <h2>LOREM IPSUM DOLOR SIT AMET</h2>
+                <h2 className="h2-font">LOREM IPSUM DOLOR SIT AMET</h2>
                 <p className="detail-font">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Modi, nam, vero quas commodi nemo corporis laboriosam culpa

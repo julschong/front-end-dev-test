@@ -4,7 +4,8 @@
         grid-column: 3/4;
         margin: auto;
         h2 {
-            color: var(--color-font-purple);
+            color: var(--color-font-h2-dark);
+            white-space: normal;
         }
         p {
             padding-top: 21px;
