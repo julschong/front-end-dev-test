@@ -53,10 +53,10 @@ html {
     color: white !important;
     border-radius: 0 !important;
     white-space: nowrap;
-    width: 172px;
-    height: 55px;
+    width: 11rem;
+    height: 3.5rem;
     border: none;
-    font-size: 15px;
+    font-size: 0.9rem;
     font-weight: 700;
     letter-spacing: 0.2ch;
 }
@@ -137,5 +137,11 @@ html {
 
     img {
         width: 100vw !important;
+    }
+
+    .banner {
+        height: 400px !important;
+        background-repeat: no-repeat;
+        background-size: contain !important;
     }
 }
