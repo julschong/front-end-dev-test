@@ -46,8 +46,10 @@ html {
 
 // Shared classes
 
-.btn {
-    color: white;
+.custom-btn {
+    color: white !important;
+    border-radius: 0 !important;
+    white-space: nowrap;
     width: 172px;
     height: 55px;
     border: none;

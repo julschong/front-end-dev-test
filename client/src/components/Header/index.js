@@ -8,7 +8,7 @@ const Header = () => {
             <div className="flex-column-center span-all-grid">
                 <h1>WELCOME TO</h1>
                 <p>Rooster Grin</p>
-                <button className="btn">BUTTON BUTTON</button>
+                <button className="custom-btn">BUTTON BUTTON</button>
             </div>
         </header>
     );

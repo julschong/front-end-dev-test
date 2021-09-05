@@ -1,6 +1,6 @@
 import './Testimonial.scss';
 import { AiFillStar } from 'react-icons/ai';
-import Carousel from './../Carousel/index';
+import ReviewCarousel from './../ReviewCarousel/index';
 
 const Testimonial = () => {
     return (
@@ -13,7 +13,7 @@ const Testimonial = () => {
                     ))}
                 </div>
             </div>
-            <Carousel />
+            <ReviewCarousel />
         </section>
     );
 };

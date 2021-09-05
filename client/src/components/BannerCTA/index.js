@@ -11,7 +11,7 @@ const BannerCTA = ({ bannerURL, gridStart, gridEnd }) => {
                 style={{ gridColumn: `${gridStart}/${gridEnd}` }}
             >
                 <h2 className="h2-font">LOREM IPSUM</h2>
-                <button className="btn">BUTTON BUTTON</button>
+                <button className="custom-btn">BUTTON BUTTON</button>
             </div>
         </section>
     );
