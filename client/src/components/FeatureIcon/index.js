@@ -10,7 +10,6 @@ const FeatureIcon = ({ SVGElement, label, animatecss }) => {
     useEffect(() => {
         if (isVisible && !viewed) {
             setViewed(true);
-            console.log(true);
         }
     }, [isVisible, viewed]);
 

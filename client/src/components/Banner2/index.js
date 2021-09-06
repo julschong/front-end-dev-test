@@ -11,7 +11,14 @@ const BannerCTA = () => {
                     sequi, quam id expedita, vel voluptatem dignissimos labore
                     quidem.
                 </p>
-                <button className="custom-btn">BUTTON BUTTON</button>
+                <button
+                    className="custom-btn"
+                    onClick={() => {
+                        window.alert('Banner 2 button clicked');
+                    }}
+                >
+                    BUTTON BUTTON
+                </button>
             </div>
         </section>
     );
