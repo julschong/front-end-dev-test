@@ -1,5 +1,15 @@
 # front-end-dev-test
 
+Hello there,
+  I really like this take home assignment, it made me explore many areas that I haven't looked into yet!
+  Please see this link for live demo: [Link](https://rooster-grin-julius.netlify.app/)
+
+Best,
+Julius
+
+
+
+---
 ## Intro
 
 Congratulations on making it to the testing phase of the hiring process! For this part, we would like to learn about your creativity, how well you code, and how well you follow instructions.
