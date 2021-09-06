@@ -11,7 +11,14 @@ const Header = () => {
             <div className="animate__animated animate__fadeIn animate__delay-1s hero-title-container">
                 <h1>WELCOME TO</h1>
                 <p>Rooster Grin</p>
-                <button className="custom-btn">BUTTON BUTTON</button>
+                <button
+                    className="custom-btn"
+                    onClick={() => {
+                        window.location.href = 'https://www.roostergrin.com/';
+                    }}
+                >
+                    BUTTON BUTTON
+                </button>
             </div>
             <BsChevronDoubleDown
                 className="more-arrow animate__animated animate__heartBeat animate__infinite"

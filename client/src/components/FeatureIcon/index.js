@@ -22,7 +22,7 @@ const FeatureIcon = ({ SVGElement, label, animatecss }) => {
                     viewed && animatecss
                 }`}
             >
-                <SVGElement />
+                <SVGElement title="" />
             </div>
             <p>{label}</p>
         </div>
