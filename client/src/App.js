@@ -14,8 +14,8 @@ const App = () => {
     return (
         <div className="grid-container">
             <Header />
-            {/* <Content />
-            <Banner1 />
+            <Content />
+            {/* <Banner1 />
             <Features />
             <Banner2 />
             <Testimonial />

@@ -3,7 +3,7 @@ import ContentImage from '../../assets/img-1.jpg';
 
 const Content = () => {
     return (
-        <section id="content" className="content-container grid">
+        <section id="content" className="content-container split">
             <div className="flex-column content-left">
                 <h2 className="h2-font">LOREM IPSUM</h2>
                 <p className="detail-font">
