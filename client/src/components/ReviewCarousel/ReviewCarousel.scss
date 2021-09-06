@@ -1,6 +1,7 @@
 .carousel {
     justify-content: center;
     padding-inline: 15%;
+    padding-bottom: 30px;
     h4 {
         color: var(--color-font-purple);
         font-weight: 700;
@@ -8,7 +9,6 @@
     }
 
     .carousel-indicators {
-        bottom: -30px;
         > button {
             width: 8px;
             height: 8px;
