@@ -4,6 +4,12 @@ Hello there,
 
   I really like this take home assignment, it made me explore many areas that I haven't looked into yet!
   Please see this link for live demo: [Link](https://rooster-grin-julius.netlify.app/)
+  
+  To run locally, please cd into client folder and run npm ci to install react and package dependencies
+  
+  Then, npm start and react will start development and show in the broswer
+  
+  ```cd client && npm ci && npm start```
 
 ---
 ## Intro
