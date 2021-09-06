@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header id="header">
             <a href="/" className="page-padding">
-                <Logo className="logo" />
+                <Logo className="logo" title="" />
             </a>
             <div className="animate__animated animate__fadeIn animate__delay-1s hero-title-container">
                 <h1>WELCOME TO</h1>
