@@ -1,0 +1,26 @@
+#banner2 {
+    background-image: url('/assets/banner-2.jpg');
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 49%;
+    .cta-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        height: 100%;
+        width: 50%;
+        margin-left: 50%;
+
+        h2 {
+            color: var(--color-font-purple);
+            font-size: 40px;
+        }
+
+        .custom-btn {
+            background-color: var(--color-button-orange);
+        }
+    }
+}

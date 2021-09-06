@@ -2,9 +2,9 @@ import './FeatureIcon.scss';
 
 const FeatureIcon = ({ SVGElement, label }) => {
     return (
-        <div className="icon-container flex-column-center">
+        <div className="icon-container">
             <div className="icon-wrapper">
-                <SVGElement width={60} />
+                <SVGElement />
             </div>
             <p>{label}</p>
         </div>

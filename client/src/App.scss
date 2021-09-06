@@ -1,0 +1,99 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'header'
+        'banner1'
+        'features'
+        'banner2'
+        'testimonial'
+        'footer';
+}
+
+.left-padding {
+    padding: 20px;
+}
+
+.split {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: minmax(200px, 100vw);
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    :root {
+        font-size: 13px;
+    }
+    .left-padding {
+        padding-left: 20px;
+    }
+    .split {
+        grid-template-columns: 20px 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: '. one two';
+
+        > :first-child {
+            grid-area: one;
+        }
+
+        > :nth-child(2) {
+            grid-area: two;
+        }
+        .left-padding {
+            padding-left: 0px;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    :root {
+        font-size: 14px;
+    }
+    .left-padding {
+        padding-left: 75px;
+    }
+    .split {
+        grid-template-columns: 72px 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: '. one two';
+        .left-padding {
+            padding-left: 0px;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    :root {
+        font-size: 15px;
+    }
+    .left-padding {
+        padding-left: 150px;
+    }
+    .split {
+        grid-template-columns: 150px 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: '. one two';
+        .left-padding {
+            padding-left: 0px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        font-size: 16px;
+    }
+    .left-padding {
+        padding-left: 252px;
+    }
+    .split {
+        grid-template-columns: 252px 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: '. one two';
+        padding-left: 0px;
+        .left-padding {
+            padding-left: 0px;
+        }
+    }
+}

@@ -5,21 +5,22 @@ import './Footer.scss';
 
 const Footer = () => {
     return (
-        <footer className="flex-column-center">
+        <footer id="footer">
             <p>Follow Us:</p>
             <div className="follow-us-icon-group">
-                <InstagramIcon height={43} />
+                <a
+                    href="https://www.roostergrin.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <InstagramIcon height={43} />
+                </a>
                 <a
                     href="https://www.facebook.com/RoosterGrin/"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <FacebookIcon
-                        height={43}
-                        href="https://www.roostergrin.com/"
-                        target="_blank"
-                        rel="noreferrer"
-                    />
+                    <FacebookIcon height={43} />
                 </a>
             </div>
         </footer>

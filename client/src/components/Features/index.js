@@ -8,8 +8,8 @@ import { ReactComponent as HomeRetention } from '../../assets/home-retention.svg
 
 const Features = () => {
     return (
-        <section id="features" className="grid feature-container">
-            <div className="flex-column content-left">
+        <section id="features" className="split feature-container">
+            <div className="feature-left left-padding">
                 <h2 className="h2-font">LOREM IPSUM DOLOR SIT AMET</h2>
                 <p className="detail-font">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.

@@ -1,9 +1,9 @@
-import './BannerCTA.scss';
+import './Banner2.scss';
 
 const BannerCTA = () => {
     return (
-        <section id="banner1" className="banner grid span-all-grid">
-            <div className="flex-column cta-container">
+        <section id="banner2" className="banner">
+            <div className="cta-container">
                 <h2 className="h2-font">LOREM IPSUM</h2>
                 <p className="detail-font">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.

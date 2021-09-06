@@ -1,0 +1,18 @@
+.carousel {
+    justify-content: center;
+    h4 {
+        color: var(--color-font-purple);
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .carousel-inner {
+        padding: 20px 30px 20px 40px;
+    }
+
+    .carousel-indicators > button {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #ffe465 !important;
+    }
+}

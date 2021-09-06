@@ -1,0 +1,10 @@
+.feature-container {
+    .feature-icons-container {
+        background-color: var(--color-background-light-grey);
+        .feature-icons-group {
+            display: grid;
+            padding: 20px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

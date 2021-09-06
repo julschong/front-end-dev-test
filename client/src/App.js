@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Content from './components/Content';
 import Banner1 from './components/Banner1';
 import Banner2 from './components/Banner2';
+import './App.scss';
 
 import bannerImage1 from './assets/banner-1.jpg';
 import bannerImage2 from './assets/banner-2.jpg';
@@ -15,11 +16,11 @@ const App = () => {
         <div className="grid-container">
             <Header />
             <Content />
-            {/* <Banner1 />
+            <Banner1 />
             <Features />
             <Banner2 />
             <Testimonial />
-            <Footer /> */}
+            <Footer />
         </div>
     );
 };
