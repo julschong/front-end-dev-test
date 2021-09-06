@@ -3,7 +3,7 @@ import './Banner2.scss';
 const BannerCTA = () => {
     return (
         <section id="banner2" className="banner">
-            <div className="cta-container left-padding">
+            <div className="cta-container page-padding">
                 <h2 className="h2-font">LOREM IPSUM</h2>
                 <p className="detail-font">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.

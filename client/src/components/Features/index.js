@@ -9,7 +9,7 @@ import { ReactComponent as HomeRetention } from '../../assets/home-retention.svg
 const Features = () => {
     return (
         <section id="features" className="split feature-container">
-            <div className="feature-left left-padding">
+            <div className="feature-left page-padding">
                 <h2 className="h2-font">LOREM IPSUM DOLOR SIT AMET</h2>
                 <p className="detail-font">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -22,10 +22,26 @@ const Features = () => {
             </div>
             <div className="feature-icons-container">
                 <div className="feature-icons-group">
-                    <FeatureIcon SVGElement={HomeExpertiseSVG} label="LOREM" />
-                    <FeatureIcon SVGElement={HomeHygeine} label="LOREM IPSUM" />
-                    <FeatureIcon SVGElement={HomeLab} label="LOREM IPSUM" />
-                    <FeatureIcon SVGElement={HomeRetention} label="LOREM" />
+                    <FeatureIcon
+                        SVGElement={HomeExpertiseSVG}
+                        label="LOREM"
+                        animatecss="tada"
+                    />
+                    <FeatureIcon
+                        SVGElement={HomeHygeine}
+                        label="LOREM IPSUM"
+                        animatecss="jello"
+                    />
+                    <FeatureIcon
+                        SVGElement={HomeLab}
+                        label="LOREM IPSUM"
+                        animatecss="rubberBand"
+                    />
+                    <FeatureIcon
+                        SVGElement={HomeRetention}
+                        label="LOREM"
+                        animatecss="swing"
+                    />
                 </div>
             </div>
         </section>

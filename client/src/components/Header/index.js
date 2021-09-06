@@ -5,7 +5,7 @@ import { BsChevronDoubleDown } from 'react-icons/bs';
 const Header = () => {
     return (
         <header id="header">
-            <a href="/">
+            <a href="/" className="page-padding">
                 <Logo className="logo" />
             </a>
             <div className="animate__animated animate__fadeIn animate__delay-1s hero-title-container">
