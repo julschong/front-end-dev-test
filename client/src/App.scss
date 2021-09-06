@@ -1,23 +1,18 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas:
-        'header'
-        'banner1'
-        'features'
-        'banner2'
-        'testimonial'
-        'footer';
 }
 
 .left-padding {
     padding: 20px;
+    padding-right: 20px;
 }
 
 .split {
     display: grid;
     width: 100vw;
     grid-template-columns: minmax(200px, 100vw);
+    grid-template-rows: 400px;
     align-items: center;
 }
 
@@ -30,7 +25,6 @@
     }
     .split {
         grid-template-columns: 20px 1fr 1fr;
-        grid-template-rows: auto;
         grid-template-areas: '. one two';
 
         > :first-child {
@@ -51,15 +45,17 @@
         font-size: 14px;
     }
     .left-padding {
-        padding-left: 75px;
+        padding-left: 72px;
+        padding-right: 40px;
     }
     .split {
         grid-template-columns: 72px 1fr 1fr;
-        grid-template-rows: auto;
         grid-template-areas: '. one two';
-        .left-padding {
-            padding-left: 0px;
-        }
+        grid-template-rows: 400px;
+    }
+    #testimonial,
+    #features > .feature-icons-container > .feature-icons-group {
+        padding-right: 40px;
     }
 }
 
@@ -69,14 +65,15 @@
     }
     .left-padding {
         padding-left: 150px;
+        padding-right: 50px;
     }
     .split {
         grid-template-columns: 150px 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: '. one two';
-        .left-padding {
-            padding-left: 0px;
-        }
+        grid-template-rows: 500px;
+    }
+    #testimonial,
+    #features > .feature-icons-container > .feature-icons-group {
+        padding-right: 100px;
     }
 }
 
@@ -86,14 +83,26 @@
     }
     .left-padding {
         padding-left: 252px;
+        padding-right: 75px;
     }
     .split {
         grid-template-columns: 252px 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: '. one two';
-        padding-left: 0px;
-        .left-padding {
-            padding-left: 0px;
-        }
+        grid-template-rows: 550px;
+    }
+    #testimonial,
+    #features > .feature-icons-container > .feature-icons-group {
+        padding-right: 150px;
+    }
+}
+
+@media (min-width: 1500px) {
+    :root {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1800px) {
+    :root {
+        font-size: 20px;
     }
 }

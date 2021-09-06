@@ -11,6 +11,12 @@
     font-size: 12px;
 }
 
+html {
+    overflow-x: hidden;
+    overflow-y: overlay;
+    min-width: 330px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,34 +24,33 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-// changing scrollbar style
-// @media not screen and (min-width: 600px) {
-//     html {
-//         overflow-x: hidden;
-//         overflow-y: overlay;
-//     }
-//     *::-webkit-scrollbar {
-//         width: 24px;
-//     }
+@media (min-width: 600px) {
+    html {
+        overflow-x: hidden;
+        overflow-y: overlay;
+    }
+    *::-webkit-scrollbar {
+        width: 24px;
+    }
 
-//     *::-webkit-scrollbar-track {
-//         background-color: transparent;
-//     }
+    *::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
 
-//     *::-webkit-scrollbar-thumb {
-//         background-color: #00000069;
-//         border-radius: 20px;
-//         border: 6px solid transparent;
-//         background-clip: content-box;
-//     }
-//     *::-webkit-scrollbar-thumb:hover {
-//         background-color: #000000a4;
-//     }
+    *::-webkit-scrollbar-thumb {
+        background-color: #00000069;
+        border-radius: 20px;
+        border: 6px solid transparent;
+        background-clip: content-box;
+    }
+    *::-webkit-scrollbar-thumb:hover {
+        background-color: #000000a4;
+    }
 
-//     * {
-//         scroll-behavior: smooth;
-//     }
-// }
+    * {
+        scroll-behavior: smooth;
+    }
+}
 
 // Shared classes
 
@@ -67,7 +72,7 @@
 
 .h2-font {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .detail-font {

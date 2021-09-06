@@ -4,11 +4,8 @@ import ReviewCarousel from './../ReviewCarousel/index';
 
 const Testimonial = () => {
     return (
-        <section
-            id="testimonial"
-            className="testimonial-container split left-padding"
-        >
-            <div className="test-left">
+        <section id="testimonial" className="testimonial-container split ">
+            <div className="test-left left-padding">
                 <h2 className="h2-font">LOREM IPSUM DOLOR SIT AMET</h2>
                 <div className="star-group">
                     {[...Array(5)].map((el, i) => (

@@ -1,8 +1,12 @@
 .feature-container {
     .feature-icons-container {
         background-color: var(--color-background-light-grey);
+        height: 100%;
+
         .feature-icons-group {
             display: grid;
+            height: 100%;
+            flex: 1;
             padding: 20px;
             grid-template-columns: 1fr 1fr;
         }

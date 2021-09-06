@@ -19,6 +19,7 @@ const Content = () => {
                 </a>
             </div>
             <img
+                id="content-image"
                 src={ContentImage}
                 alt="silhouette of a friend helping another mountain climbing"
                 loading="lazy"

@@ -11,6 +11,10 @@
         font-weight: 700;
     }
 
+    svg {
+        stroke: var(--color-font-purple);
+    }
+
     .follow-us-icon-group {
         display: flex;
         gap: 20px;
