@@ -2,15 +2,22 @@
 
 Hello there,
 
-  I really like this take home assignment, it made me explore many areas that I haven't looked into yet!
-  Please see this link for live demo: [Link](https://rooster-grin-julius.netlify.app/)
+  I really liked this take home assignment, it made me explore many areas that I haven't looked into yet!
+  
+  I hosted the website on netlify, please see this link for live demo: <a href="https://rooster-grin-julius.netlify.app/" target="_blank">Demo</a>
+  
+ 
   
   To run locally, please cd into client folder and run npm ci to install react and package dependencies
   
   Then, npm start and react will start development and show in the broswer
   
   ```cd client && npm ci && npm start```
-
+  
+  
+  The 3 discussion answers is here: <a href="https://github.com/julschong/front-end-dev-test/blob/master/discussion.md" target="_blank">discussion.md</a>
+  
+  
 ---
 ## Intro
 
