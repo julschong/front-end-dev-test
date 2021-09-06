@@ -1,13 +1,9 @@
 # front-end-dev-test
 
 Hello there,
+
   I really like this take home assignment, it made me explore many areas that I haven't looked into yet!
   Please see this link for live demo: [Link](https://rooster-grin-julius.netlify.app/)
-
-Best,
-Julius
-
-
 
 ---
 ## Intro
