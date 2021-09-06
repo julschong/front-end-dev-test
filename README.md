@@ -1,5 +1,24 @@
 # front-end-dev-test
 
+Hello there,
+
+  I really liked this take home assignment, it made me explore many areas that I haven't looked into yet!
+  
+  I hosted the website on netlify, please see this link for live demo: <a href="https://rooster-grin-julius.netlify.app/" target="_blank">Demo</a>
+  
+ 
+  
+  To run locally, please cd into client folder and run npm ci to install react and package dependencies
+  
+  Then, npm start and react will start development and show in the broswer
+  
+  ```cd client && npm ci && npm start```
+  
+  
+  The 3 discussion answers is here: <a href="https://github.com/julschong/front-end-dev-test/blob/master/discussion.md" target="_blank">discussion.md</a>
+  
+  
+---
 ## Intro
 
 Congratulations on making it to the testing phase of the hiring process! For this part, we would like to learn about your creativity, how well you code, and how well you follow instructions.
