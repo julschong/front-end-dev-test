@@ -14,4 +14,12 @@
     .icon-wrapper {
         width: 5rem;
     }
+
+    svg {
+        transition: transform 0.2s ease-in;
+    }
+
+    svg:hover {
+        transform: rotate(-10deg) scale(1.2);
+    }
 }
