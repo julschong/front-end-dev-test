@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import Header from './components/Header';
 import Content from './components/Content';
 import Banner1 from './components/Banner1';
@@ -8,8 +8,15 @@ import './App.scss';
 import Footer from './components/Footer';
 import Features from './components/Features/index';
 import Testimonial from './components/Testimonial/index';
+import { HomeContext } from './store/HomeContext';
 
 const App = () => {
+    const { homeData } = useContext(HomeContext);
+
+    useEffect(() => {
+        console.log(homeData[0]);
+    }, [homeData]);
+
     return (
         <div className="grid-container">
             <Header />

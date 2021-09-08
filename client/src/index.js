@@ -4,5 +4,11 @@ import './index.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
 import App from './App';
+import HomeContextProvider from './store/HomeContext';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <HomeContextProvider>
+        <App />
+    </HomeContextProvider>,
+    document.getElementById('root')
+);
