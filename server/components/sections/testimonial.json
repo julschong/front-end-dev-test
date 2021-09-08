@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_testimonials",
+  "info": {
+    "name": "testimonial",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "review": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.review"
+    }
+  }
+}

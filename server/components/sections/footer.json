@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_footers",
+  "info": {
+    "name": "footer",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "socialMediaIcon": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.social-media-icon"
+    }
+  }
+}

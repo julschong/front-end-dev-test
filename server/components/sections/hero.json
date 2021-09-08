@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_sections_heroes",
+  "info": {
+    "name": "hero",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Subtitle": {
+      "type": "string"
+    },
+    "linkURL": {
+      "type": "string"
+    },
+    "heroImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

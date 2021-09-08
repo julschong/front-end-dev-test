@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_elements_social_media_icons",
+  "info": {
+    "name": "socialMediaIcon",
+    "icon": "globe-americas"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "linkURL": {
+      "type": "string"
+    },
+    "mediaIcon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

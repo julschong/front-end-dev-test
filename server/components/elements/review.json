@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_reviews",
+  "info": {
+    "name": "review",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "author": {
+      "type": "string"
+    },
+    "createdDate": {
+      "type": "date"
+    },
+    "reviewContent": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_elements_icon_groups",
+  "info": {
+    "name": "iconGroup",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "caption": {
+      "type": "string"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
