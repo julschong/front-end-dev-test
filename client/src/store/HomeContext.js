@@ -1,5 +1,6 @@
 import { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
+import { BACKEND_URL } from './../config/config';
 
 export const HomeContext = createContext(null);
 
@@ -8,7 +9,7 @@ const HomeContextProvider = ({ children }) => {
 
     useEffect(() => {
         axios
-            .get(`${process.env.REACT_APP_BACKEND_URL}/home`)
+            .get(`${BACKEND_URL}/home`)
             .then((res) => setData({ loading: false, data: res.data }));
     }, []);
 
