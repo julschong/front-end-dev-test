@@ -2,7 +2,8 @@
   "collectionName": "components_sections_banners",
   "info": {
     "name": "banner",
-    "icon": "archive"
+    "icon": "archive",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -26,6 +27,9 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "buttonText": {
+      "type": "string"
     }
   }
 }
