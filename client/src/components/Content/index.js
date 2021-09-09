@@ -1,5 +1,4 @@
 import './Content.scss';
-import ContentImage from '../../assets/img-1.jpg';
 import { useContext } from 'react';
 import { HomeContext } from './../../store/HomeContext';
 import { BACKEND_URL } from '../../config/config';

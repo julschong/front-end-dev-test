@@ -1,11 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
+import { BACKEND_URL } from '../../config/config';
 import useOnScreen from '../../hooks/onScreenHook';
 import './FeatureIcon.scss';
 
-const FeatureIcon = ({ SVGElement, label, animatecss }) => {
+const FeatureIcon = ({ iconData }) => {
     const ref = useRef();
     const [viewed, setViewed] = useState(false);
     const isVisible = useOnScreen(ref);
+    const { icon, caption, animatecss } = iconData;
 
     useEffect(() => {
         if (isVisible && !viewed) {
@@ -21,9 +23,9 @@ const FeatureIcon = ({ SVGElement, label, animatecss }) => {
                     viewed && animatecss
                 }`}
             >
-                <SVGElement title="" />
+                <img src={`${BACKEND_URL + icon.url}`} alt="" />
             </div>
-            <p>{label}</p>
+            <p>{caption}</p>
         </div>
     );
 };
