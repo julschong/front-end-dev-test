@@ -3,6 +3,7 @@ import './Header.scss';
 import { BsChevronDoubleDown } from 'react-icons/bs';
 import { HomeContext } from '../../store/HomeContext';
 import { useContext } from 'react';
+import { BACKEND_URL } from './../../config/config';
 
 const Header = () => {
     const { homeData } = useContext(HomeContext);
@@ -10,7 +11,12 @@ const Header = () => {
     console.log(homeData.data);
 
     return (
-        <header id="header">
+        <header
+            id="header"
+            style={{
+                backgroundImage: `url("${BACKEND_URL}${hero.heroImage.url}")`
+            }}
+        >
             <a href="/" className="page-padding">
                 <Logo className="logo" title="" />
             </a>
