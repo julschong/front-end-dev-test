@@ -8,7 +8,6 @@ import { BACKEND_URL } from './../../config/config';
 const Header = () => {
     const { homeData } = useContext(HomeContext);
     const hero = homeData.data.hero;
-    console.log(homeData.data);
 
     return (
         <header
