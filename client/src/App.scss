@@ -3,6 +3,23 @@
     grid-template-columns: 1fr;
 }
 
+#loading-icon {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    animation: loading 1.5s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 .page-padding {
     padding: 20px;
     padding-right: 20px;

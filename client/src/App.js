@@ -10,11 +10,13 @@ import Features from './components/Features/index';
 import Testimonial from './components/Testimonial/index';
 import { HomeContext } from './store/HomeContext';
 
+import { VscLoading } from 'react-icons/vsc';
+
 const App = () => {
     const { homeData } = useContext(HomeContext);
 
     if (homeData.loading) {
-        return 'Loading';
+        return <VscLoading id="loading-icon" size={window.innerWidth / 20} />;
     }
 
     return (
