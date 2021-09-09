@@ -1,27 +1,30 @@
-import { ReactComponent as InstagramIcon } from '../../assets/instagram.svg';
-import { ReactComponent as FacebookIcon } from '../../assets/facebook.svg';
-
 import './Footer.scss';
+import { HomeContext } from './../../store/HomeContext';
+import { useContext } from 'react';
+import { BACKEND_URL } from './../../config/config';
 
 const Footer = () => {
+    const { homeData } = useContext(HomeContext);
+    const { closeText, socialMediaIcon } = homeData.data.footer;
+
     return (
         <footer id="footer">
-            <p>Follow Us:</p>
+            <p>{closeText}</p>
             <div className="follow-us-icon-group">
-                <a
-                    href="https://www.roostergrin.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <InstagramIcon height={43} />
-                </a>
-                <a
-                    href="https://www.facebook.com/RoosterGrin/"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <FacebookIcon height={43} />
-                </a>
+                {socialMediaIcon.map((icon, i) => (
+                    <a
+                        href={icon.linkURL}
+                        target="_blank"
+                        rel="noreferrer"
+                        key={icon.name + ' link'}
+                    >
+                        <img
+                            src={BACKEND_URL + icon.mediaIcon.url}
+                            height={43}
+                            alt={icon.name}
+                        />
+                    </a>
+                ))}
             </div>
         </footer>
     );

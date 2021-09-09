@@ -1,4 +1,3 @@
-import { ReactComponent as Logo } from '../../assets/logo-white.svg';
 import './Header.scss';
 import { BsChevronDoubleDown } from 'react-icons/bs';
 import { HomeContext } from '../../store/HomeContext';
@@ -9,6 +8,7 @@ const Header = () => {
     const { homeData } = useContext(HomeContext);
     const { heroImage, title, subtitle, linkURL, buttonText } =
         homeData.data.hero;
+    const { logo } = homeData.data;
 
     return (
         <header
@@ -18,7 +18,7 @@ const Header = () => {
             }}
         >
             <a href="/" className="page-padding">
-                <Logo className="logo" title="" />
+                <img src={BACKEND_URL + logo.url} className="logo" alt="logo" />
             </a>
             <div className="animate__animated animate__fadeIn animate__delay-1s hero-title-container">
                 <h1>{title}</h1>
