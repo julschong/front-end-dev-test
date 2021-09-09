@@ -7,28 +7,29 @@ import { BACKEND_URL } from './../../config/config';
 
 const Header = () => {
     const { homeData } = useContext(HomeContext);
-    const hero = homeData.data.hero;
+    const { heroImage, title, subtitle, linkURL, buttonText } =
+        homeData.data.hero;
 
     return (
         <header
             id="header"
             style={{
-                backgroundImage: `url("${BACKEND_URL}${hero.heroImage.url}")`
+                backgroundImage: `url("${BACKEND_URL}${heroImage.url}")`
             }}
         >
             <a href="/" className="page-padding">
                 <Logo className="logo" title="" />
             </a>
             <div className="animate__animated animate__fadeIn animate__delay-1s hero-title-container">
-                <h1>{hero.title}</h1>
-                <p>{hero.subtitle}</p>
+                <h1>{title}</h1>
+                <p>{subtitle}</p>
                 <button
                     className="custom-btn"
                     onClick={() => {
-                        window.location.href = `${hero.linkURL}`;
+                        window.location.href = `${linkURL}`;
                     }}
                 >
-                    {hero.buttonText}
+                    {buttonText}
                 </button>
             </div>
             <BsChevronDoubleDown
