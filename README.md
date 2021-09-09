@@ -4,18 +4,34 @@ Hello there,
 
   I really liked this take home assignment, it made me explore many areas that I haven't looked into yet!
   
-  I hosted the website on netlify, please see this link for live demo: <a href="https://rooster-grin-julius.netlify.app/" target="_blank">Demo</a>
-  
- 
-  
-  To run locally, please cd into client folder and run npm ci to install react and package dependencies
-  
-  Then, npm start and react will start development and show in the broswer
-  
-  ```cd client && npm ci && npm start```
-  
+  I hosted the website on netlify, please see this link for live demo: <a href="https://rooster-grin-julius.netlify.app/" target="_blank">Demo</a>  
   
   The 3 discussion answers is here: <a href="https://github.com/julschong/front-end-dev-test/blob/master/discussion.md" target="_blank">discussion.md</a>
+  
+  
+# Strapi Update 9/9/21:
+
+  Site content is now provided by Strapi CMS from the backend server.
+  
+  Strapi is not hosted online.
+
+  To run locally, please install concurrently by running below code from the root folder:
+  
+  ```npm i -g concurrently```
+  
+  Then, to install packages and dependencies, please run:
+  
+  ```npm run ci```
+  
+  Then, to start dev server for both frontend and backend on local machine, please run:
+  
+  ```npm run dev```
+
+  Frontend ./client/src/config/config.js has BACKEND_URL set to http://localhost:1337
+  
+  Backend Strapi default dev server port is 1337  
+  
+  Once strapi is built and running, http://locahost:1337/admin will be the login page to make account first for the CMS.
   
   
 ---
