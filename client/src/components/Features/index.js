@@ -20,8 +20,11 @@ const Features = () => {
             </div>
             <div className="feature-icons-container">
                 <div className="feature-icons-group">
-                    {iconGroup.map((iconData) => (
-                        <FeatureIcon iconData={iconData} />
+                    {iconGroup.map((iconData, i) => (
+                        <FeatureIcon
+                            iconData={iconData}
+                            key={`${iconData.caption + i}`}
+                        />
                     ))}
                 </div>
             </div>

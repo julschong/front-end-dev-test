@@ -1,23 +1,30 @@
+import { useContext } from 'react';
+import { BACKEND_URL } from '../../config/config';
+import { HomeContext } from '../../store/HomeContext';
 import './Banner2.scss';
 
 const BannerCTA = () => {
+    const { homeData } = useContext(HomeContext);
+    const { title, subtitle, bannerImage, buttonText } =
+        homeData.data.banner[1];
     return (
-        <section id="banner2" className="banner">
+        <section
+            id="banner2"
+            className="banner"
+            style={{
+                backgroundImage: `url("${BACKEND_URL + bannerImage.url}")`
+            }}
+        >
             <div className="cta-container page-padding">
-                <h2 className="h2-font">LOREM IPSUM</h2>
-                <p className="detail-font">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Pariatur, et iusto? Minus, accusantium qui saepe assumenda
-                    sequi, quam id expedita, vel voluptatem dignissimos labore
-                    quidem.
-                </p>
+                <h2 className="h2-font">{title}</h2>
+                <p className="detail-font">{subtitle}</p>
                 <button
                     className="custom-btn"
                     onClick={() => {
                         window.alert('Banner 2 button clicked');
                     }}
                 >
-                    BUTTON BUTTON
+                    {buttonText}
                 </button>
             </div>
         </section>
