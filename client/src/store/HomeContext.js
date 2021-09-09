@@ -5,16 +5,18 @@ import { BACKEND_URL } from './../config/config';
 export const HomeContext = createContext(null);
 
 const HomeContextProvider = ({ children }) => {
-    const [data, setData] = useState({ loading: true, data: {} });
+    const [data, setData] = useState({});
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios
-            .get(`${BACKEND_URL}/home`)
-            .then((res) => setData({ loading: false, data: res.data }));
+        axios.get(`${BACKEND_URL}/home`).then((res) => {
+            setData({ ...res.data });
+            setLoading(false);
+        });
     }, []);
 
     const store = {
-        homeData: [data, setData]
+        homeData: { data, setData, loading }
     };
 
     return (

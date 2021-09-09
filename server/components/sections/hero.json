@@ -2,14 +2,15 @@
   "collectionName": "components_sections_heroes",
   "info": {
     "name": "hero",
-    "icon": "address-book"
+    "icon": "address-book",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Subtitle": {
+    "subtitle": {
       "type": "string"
     },
     "linkURL": {
@@ -25,6 +26,9 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "buttonText": {
+      "type": "string"
     }
   }
 }

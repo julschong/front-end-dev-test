@@ -13,9 +13,9 @@ import { HomeContext } from './store/HomeContext';
 const App = () => {
     const { homeData } = useContext(HomeContext);
 
-    useEffect(() => {
-        console.log(homeData[0]);
-    }, [homeData]);
+    if (homeData.loading) {
+        return 'Loading';
+    }
 
     return (
         <div className="grid-container">
