@@ -18,6 +18,14 @@ Hello there,
   The 3 discussion answers is here: <a href="https://github.com/julschong/front-end-dev-test/blob/master/discussion.md" target="_blank">discussion.md</a>
   
   
+# Strapi Update 9/9/21
+  Backend with Strapi CMS is just completed. React client fetches data from Strapi CMS to display.
+  This is built after the deadline, so it will be in a different branch.
+  
+  If you would like to check it out, please vist [strapi branch](https://github.com/julschong/front-end-dev-test/tree/strapi)
+  
+  
+  
 ---
 ## Intro
 
