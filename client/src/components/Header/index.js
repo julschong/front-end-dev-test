@@ -26,7 +26,7 @@ const Header = () => {
                 <button
                     className="custom-btn"
                     onClick={() => {
-                        window.location.href = `${linkURL}`;
+                        window.open(`${linkURL}`);
                     }}
                 >
                     {buttonText}
